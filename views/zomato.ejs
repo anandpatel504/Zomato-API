@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zomato</title>
+	<!-- <link href="/zomato.css" rel="stylesheet" type="text/css" > -->
+	<link rel="stylesheet" type="text/css" href="/zomato.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://www.apkmirror.com/wp-content/uploads/2019/01/5c3750111e19e-384x384.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="header">
+		<h1>Zomato</h1>
+		<div class="search_bar2">
+			<form class="example" action="/locations" method="post" style="margin:auto;max-width:300px">
+				  <input type="text" placeholder="Search.." name="search">
+				  <button type="submit"><i class="fa fa-search"></i></button>
+			</form>	
+		</div>
+	</div>
+	<br>
+	<br>
+	<% for (var i of data) { %>
+
+	<div class="content">
+		<div class="image">
+		<% if (i.featured_image!= ''){ %>
+			<img src= <%= i.featured_image %> >
+		<% } else { %>
+			<img src="https://mk0restaurantsbkd2xc.kinstacdn.com/wp-content/uploads/2016/06/Restaurants-in-Brighton.jpg">
+		<% } %>
+		<!-- <img src= <%= i.featured_image %> > -->
+		</div>
+		<div class="text">
+			<center><h1><%= i.name %></h1>
+			<p class="address"><%= i.address %></p></center>
+			<hr>
+			<table class="details">
+				<tr>
+					<td class="key">Average Cost For Two:</td>
+					<td><%= i.average_cost_for_two %></td>
+				</tr>
+				<tr>
+					<td class="key">Price Range:</td>
+					<td><%= i.price_range %></td>
+				</tr>
+				<tr>
+					<td class="key">Has Online Delivery:</td>
+					<td><%= i.has_online_delivery %></td>
+				</tr>
+				<tr>
+					<td class="key">Cuisines:</td>
+					<td><%= i.cuisines %></td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+				
+			</table>
+		</div>
+
+
+	</div>
+	<br>
+	<br>
+
+	<% } %>
+
+</body>
+</html>

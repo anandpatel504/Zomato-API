@@ -1,0 +1,99 @@
+body{
+	margin: 0;
+	background: #e5e5e5;
+
+}
+.header h1{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+}
+.header{
+	background-color: red;
+	padding: 2px;
+
+}
+.content img{
+	width: 430px;
+	height: 300px;
+	border-radius: 15px; 
+}
+.content{
+	height: 300px;
+	background-color: white;
+	margin: 0vw 9.8vw;
+	border-radius: 12px 0px 0px 10px;
+}
+.text{
+	margin: -23vw 0px 0px 31.7vw;
+}
+.text h1{
+	font-size: 28px;
+	color: red;
+}
+.text p{
+	font-size: 20px;
+	font-weight: bold;
+}
+.details{
+	margin-left:89px;
+}
+.key{
+	padding-right: 20px;
+	font-size: 20px;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+form.example button:hover {
+  background: #0b7dda;
+}
+* {
+  box-sizing: border-box;
+}
+.search_bar2{
+	display: -webkit-flex; /* Safari */
+  	display: flex;
+  	margin-left: 60vw;
+  	margin-top: -40px;
+}
+
+
+
+
+@media only screen and (max-width: 1125px) {
+	.content img{
+	width: 310px;
+	height: 290px;
+	border-radius: 15px; 
+}
+.text p{
+	font-size: 15px;
+	font-weight: bold;
+}
+.text{
+	margin: -31vw 0px 0px 30vw;
+}
+.content{
+	height: 295px;
+	margin: 0vw 6vw;
+}
+}
