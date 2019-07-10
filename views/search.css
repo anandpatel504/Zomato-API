@@ -42,8 +42,14 @@ form.example::after {
   clear: both;
   display: table;
 }
+.place{
+	margin-left: 18vw;
+}
 @media only screen and (max-width: 1125px) {
 	.tab{
 		padding: 20vw;
-	}	
+	}
+  .place{
+	  margin-left: 18vw;
+}
 }
