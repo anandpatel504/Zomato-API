@@ -41,7 +41,8 @@ app.post("/locations", (req, res)=>{
                             price_range: i.restaurant.price_range,
                             has_online_delivery: i.restaurant.has_online_delivery,
                             cuisines: i.restaurant.cuisines,
-                            featured_image: i.restaurant.featured_image
+                            featured_image: i.restaurant.featured_image,
+                            url: i.restaurant.url
                         }
                         data_list.push(Dict);
                     }
