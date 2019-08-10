@@ -26,14 +26,15 @@
 	<div class="content">
 		<div class="image">
 		<% if (i.featured_image!= ''){ %>
-			<img src= <%= i.featured_image %> >
+		<a href="<%= i.url%>"><img src= "<%= i.featured_image %> "></a>
+
 		<% } else { %>
 			<img src="https://mk0restaurantsbkd2xc.kinstacdn.com/wp-content/uploads/2016/06/Restaurants-in-Brighton.jpg">
 		<% } %>
 		<!-- <img src= <%= i.featured_image %> > -->
 		</div>
 		<div class="text">
-			<center><h1><%= i.name %></h1>
+			<center><a style="text-decoration:none" href="<%= i.url%>"><h1><%= i.name %></h1></a>
 			<p class="address"><%= i.address %></p></center>
 			<hr>
 			<table class="details">
